@@ -1,29 +1,12 @@
 package shopGUI;
-import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
 
 import javax.swing.*;
-import javax.swing.event.AncestorEvent;
-import javax.swing.event.AncestorListener;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 import shopModel.Cart;
 import shopModel.Good;
-
-import java.math.*;
 
 
 public class BuyFrame extends JFrame{
@@ -71,7 +54,7 @@ public class BuyFrame extends JFrame{
 					good.setId(id);
 					good.setName(nameStr);
 					good.setPrice(Double.parseDouble(scoreStr));
-					good.setNum(Integer.parseInt(scoreStr));
+					good.setNum(Integer.parseInt(numStr));
 					
 					if (JOptionPane.showConfirmDialog(null, "商品名称："+nameStr+"\n价格："+scoreStr+"\n数量："+numStr, "确认添加？", JOptionPane.YES_NO_OPTION)==1) 
 						return; 

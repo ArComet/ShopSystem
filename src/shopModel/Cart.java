@@ -1,9 +1,6 @@
 package shopModel;
 import java.io.Serializable;
-import java.math.*;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
 
 
 public class Cart implements Serializable

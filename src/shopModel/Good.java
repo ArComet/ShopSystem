@@ -1,6 +1,5 @@
 package shopModel;
 import java.io.Serializable;
-import java.math.*;
 
 public class Good implements Serializable
 {
